@@ -1,0 +1,36 @@
+* {
+  border: 1px solid black;
+}
+
+header {
+  background: blue;
+  color: white;
+}
+
+header a {
+  color: white;
+}
+
+body {
+  font-size: 1rem;
+}
+
+p {
+  color: #444444;
+}
+
+.hero {
+  font-size: 2rem;
+}
+
+.hero button {
+  font-size: 2rem;
+}
+
+.gray {
+  color: gray;
+}
+
+.Services {
+  text-transform: uppercase;
+}
