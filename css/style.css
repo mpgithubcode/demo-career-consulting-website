@@ -1,48 +1,16 @@
-:root{
---color: #f35;
---black: #000;
---light_blue: #88B8DA;
---white: #fff;
---red: #ED1C24;
---blue: #0088CB;
---yellow: #FFCB05;
---grey: #727272;
---grey2: #B0B0B0;
---blue2: #3289C7;
---grey3: #CCC;
---grey4: #A0A0A0;
---grey5: #5E5E5E;
---black2: #2E2E2E;
---purple: #B3BFE7;
---purple2: #8999D0;
---purple3: #3B58B8;
---blue3: #215B85;
---purple4: #273B7B;
---dark_purple: #141D3D;
---pink: #F8B2B9;
---pink2: #F16876;
---pink3: #C84869;
---dark_pink: #78343B;
---brown_pink: #3C1A1E;
---black3: #112E42;
---pink4: #F0B0B7;
---pink5: #E08790;
---pink6: #D12A3C;
---pink7: #8B1C28;
---pink8: #460E14;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
 
 .container {
   width: 100vw;
   height: 100vh;
+  min-width: 70vw;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px 1fr 1fr 100px;
 
   gap: 10px;
 
@@ -51,26 +19,41 @@ body {
 }
 
 .container div {
-  padding: 10px;
-  border: 1px solid #000000;
+  padding: 0px;
+  /* border: 1px solid #000000; */
 }
 
 /* Header CSS */
 .header {
-  grid-column-start: 1;
-  grid-column-end: 4;
   display: flex;
-  justify-content: end;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  font-size: 1rem;
+}
+.logo {
+  display:flexbox;
+}
+
+nav {
+  /* border: 1px solid #000000; */
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-links {
-  border: 1px solid #000000;
-  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
 
 .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Hero CSS  */
